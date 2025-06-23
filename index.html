@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Note App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>📝 Notify</h1>
+        <button id="toggleTheme">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <main>
+        <div class="note-container">
+            <textarea id="noteInput" placeholder="Write something exciting..."></textarea>
+            <div class="controls">
+                <select id="colorPicker">
+                    <option value="#00c6ff">Blue</option>
+                    <option value="#ff6b6b">Red</option>
+                    <option value="#1dd1a1">Green</option>
+                    <option value="#feca57">Orange</option>
+                </select>
+                <button onclick="addOrUpdateNote()">💾 Save Note</button>
+            </div>
+            <ul id="notesList"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>✨ Notes that Stay with You! ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
